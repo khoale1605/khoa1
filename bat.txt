@@ -1,0 +1,28 @@
+cd C:\\Users\\kle44\\Downloads\\bat
+rename "New Text Document.txt" "bat-rename.txt"
+cd C:\\Users\\kle44\\Downloads\\bat2
+
+del readme.zip
+7z a readme.zip readme.txt
+
+----------------------
+
+cd ${WORKSPACE}/CSCGroupAsiaWeb/target
+mv csc-group-asia-web-1.0-SNAPSHOT.war CSCGroupAsiaWeb.war
+cd ${WORKSPACE}/CSCSmart400Batch/target
+rm -rf csc-smart400-batch.zip
+7z a csc-smart400-batch.zip csc-smart400-batch
+cd ${WORKSPACE}
+rm -rf ReportOut.zip
+7z a ReportOut.zip ReportOut
+
+-----------------------------
+
+cd C:\\Program Files (x86)\Jenkins\\workspace\\OK\\CSCGroupAsiaWeb\\target
+rename "csc-group-asia-web-1.0-SNAPSHOT.war" "CSCGroupAsiaWeb.war"
+cd C:\\Program Files (x86)\\Jenkins\\workspace\\OK\\CSCSmart400Batch\\target
+del csc-smart400-batch.zip
+7z a csc-smart400-batch.zip "csc-smart400-batch"
+cd C:\\Program Files (x86)\\Jenkins\\workspace\\OK
+del ReportOut.zip
+7z a ReportOut.zip "ReportOut"
